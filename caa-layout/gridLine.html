@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cln1] 100px [cln2] auto [cln3] 100px [cln4];
+            grid-template-rows: [rln1] 50px [rln2] auto [rln3] 100px [rln4];
+        }
+
+        .header {
+            background-color: plum;
+            border: solid 1px purple;
+            grid-column-start: cln1;
+            grid-column-end: cln4;
+            grid-template-rows: rln1;
+            grid-template-rows: rln2;
+        }
+
+        .main {
+            background-color: plum;
+            border: solid 1px purple;
+            grid-column-start: cln2;
+            grid-column-end: cln3;
+            grid-row-start: rln2;
+            grid-row-end: rln3;
+            margin: 10px 0 10px;
+        }
+
+        .footer {
+            background-color: plum;
+            border: solid 1px purple;
+            grid-column-start: cln1;
+            grid-column-end: cln4;
+            grid-template-rows: rln3;
+            grid-template-rows: rln4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to My Website</h1>
+        </header>
+        <main class="main">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius consequatur consequuntur, dolor
+                libero laborum asperiores natus dolores vitae nisi unde mollitia a at. Numquam dicta praesentium
+                possimus ipsum rerum.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius consequatur consequuntur, dolor
+                libero laborum asperiores natus dolores vitae nisi unde mollitia a at. Numquam dicta praesentium
+                possimus ipsum rerum.
+            </p>
+        </main>
+        <footer class="footer">
+            <p>
+                Develope with Will Power by Dwi Reza
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

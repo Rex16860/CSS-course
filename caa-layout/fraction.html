@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        /* grid-template-columns: 200px repeat(4, 1fr); */
+        grid-template-columns: 200px 1fr 2fr 2fr 1fr;
+        column-gap: 10px;
+    }
+
+    nav {
+        background-color: grey;
+    }
+
+    .c {
+        background-color: plum;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <h1>Sidebar</h1>
+        </nav>
+        <div class="c">Content</div>
+        <div class="c">Content</div>
+        <div class="c">Content</div>
+        <div class="c">Content</div>
+    </div>
+
+</body>
+
+</html>

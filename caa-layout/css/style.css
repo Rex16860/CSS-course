@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.c {
+    width: 200px;
+    background-color: plum;
+    border: solid 2px purple;
+    margin: 10px;
+    padding: 10px;
+}

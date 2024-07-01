@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 128px auto auto 100px;
+        grid-template-rows: 64px auto 128px;
+        grid-template-areas:
+            "hr hr hr hr"
+            "nv mn mn mn"
+            "ft ft ft ft"
+        ;
+    }
+
+    header,
+    footer {
+        background-color: indigo;
+        border: solid 1px;
+    }
+
+    nav,
+    main {
+        background-color: plum;
+        border: solid 1px purple;
+    }
+
+    header {
+        grid-area: hr;
+    }
+
+    nav {
+        margin: 10px 5px 10px 0;
+        grid-area: nv;
+        grid-area: nv;
+    }
+
+    main {
+        padding: 6px;
+        margin: 10px 0 10px 0;
+        grid-area: mn;
+    }
+
+    footer {
+        grid-area: ft;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis autem rem voluptate temporibus magnam
+                    alias cum adipisci natus ullam quibusdam excepturi minus sapiente, perspiciatis at sequi, sunt dicta
+                    quas minima.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat soluta illo repellendus expedita?
+                    Doloribus perferendis sit non labore molestias? Consectetur nemo expedita quis. Harum numquam
+                    incidunt earum amet natus illo ut. Reprehenderit suscipit, necessitatibus esse quod sed ea, ullam
+                    nulla, voluptatibus ut voluptatem minus laborum culpa harum nobis vero alias hic eos eum sapiente
+                    quasi similique. Veritatis non, fuga recusandae, repellendus deserunt inventore omnis aspernatur
+                    modi accusantium asperiores alias. Ea consectetur officiis sequi aliquam ipsam tenetur sit
+                    quibusdam? Cupiditate dolor eius deserunt omnis ipsum quae a laborum! Eaque quisquam enim placeat
+                    iure qui, optio, maxime, necessitatibus modi perspiciatis labore amet?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ut optio vel quam. Perspiciatis
+                    nulla earum animi. Sit ipsam dolorem in dolore expedita nobis labore consequatur fugiat! Totam, modi
+                    excepturi.
+                </p>
+            </article>
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>

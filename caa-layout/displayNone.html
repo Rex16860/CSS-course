@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .menubar {
+        display: inline-block;
+    }
+
+    .menu {
+        background-color: dimgray;
+        color: white;
+        padding: 10px 20px 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .menulist {
+        background-color: grey;
+        position: absolute;
+        border-radius: 5px;
+        display: none;
+        z-index: 1;
+    }
+
+    .menulist a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .menulist a:hover {
+        background-color: rgb(27, 178, 27);
+    }
+
+    .menubar:hover .menu {
+        background-color: rgb(24, 23, 23);
+    }
+
+    .menubar:hover .menulist {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <div class="menubar">
+        <button class="menu">Social Media</button>
+        <div class="menulist">
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Linkedin</a>
+            <a href="">Youtube</a>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam adipisci unde praesentium nesciunt cupiditate
+        consequuntur, dignissimos cumque eaque totam tenetur ipsum distinctio repellat in earum dolor optio.
+        Necessitatibus, suscipit aspernatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam adipisci unde praesentium nesciunt cupiditate
+        consequuntur, dignissimos cumque eaque totam tenetur ipsum distinctio repellat in earum dolor optio.
+        Necessitatibus, suscipit aspernatur?</p>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        height: 2000px;
+    }
+
+    .content {
+        width: 200px;
+        height: 200px;
+        background-color: plum;
+        display: inline-block;
+    }
+
+    .two {
+        background-color: indigo;
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        z-index: -1;
+    }
+
+    .iklan {
+        background-color: black;
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        right: 0;
+        color: white;
+        text-align: center;
+        line-height: 200px;
+    }
+</style>
+
+<body>
+
+    <div class="content one">
+        <h1>content1</h1>
+    </div>
+    <div class="content two">
+        <h1>content2</h1>
+    </div>
+    <div class="content three">
+        <h1>content3</h1>
+    </div>
+    <div class="iklan">advertisement</div>
+
+</body>
+
+</html>

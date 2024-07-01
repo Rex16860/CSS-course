@@ -1,0 +1,23 @@
+@media all {
+    .container {
+        display: grid;
+        gap: 10px;
+    }
+
+    .c {
+        background-color: plum;
+        border: solid 2px purple;
+    }
+}
+
+@media screen and (min-width: 10px) and (max-width: 500px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid Line</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cln1] 64px [cln2] auto [cln3] 64px [cln4];
+            grid-template-rows: [rln1] 75px [rln2] auto [rln3] 100px [rln4];
+        }
+
+        header,
+        footer {
+            text-align: center;
+            background-color: darkorchid;
+        }
+
+        header {
+            grid-column-start: cln1;
+            grid-column-end: cln4;
+            grid-row-start: rln1;
+            grid-row-end: rln2;
+        }
+
+        main {
+            background-color: plum;
+            border: solid 1px purple;
+            margin: 10px;
+            grid-column-start: cln2;
+            grid-column-end: cln3;
+            grid-row-start: rln2;
+            grid-row-end: rln3;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: darkorchid;
+            grid-column-start: cln1;
+            grid-column-end: cln4;
+            grid-row-start: rln3;
+            grid-row-end: rln4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- col 1 -->
+        <header>
+            <h1>Welcome to My Website</h1>
+        </header>
+
+        <!-- col 2 -->
+        <main>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus dolor doloremque quos repudiandae,
+                facere hic. Aliquid officiis sed cumque autem nemo, amet cum, provident, sapiente praesentium nisi
+                eveniet voluptates quos.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, a, voluptates cumque officia repellat
+                tenetur voluptate ipsa modi mollitia repellendus quasi consequuntur molestiae assumenda quaerat rem
+                blanditiis qui similique! Nostrum doloremque sed voluptatibus repudiandae facere rem aliquam impedit
+                temporibus incidunt sequi expedita quos quidem, voluptatem porro omnis harum, in architecto corporis.
+                Neque, tempore vero dolore deserunt placeat dignissimos praesentium provident quia maxime laboriosam.
+                Saepe ex earum nam iusto quis dicta ea ratione eaque inventore sit magnam, aspernatur, consectetur
+                quidem quibusdam debitis maxime laboriosam reiciendis praesentium fugit doloribus delectus facilis nobis
+                qui! Aperiam exercitationem quos itaque, distinctio tempore veniam quas illum!
+            </p>
+        </main>
+
+        <!-- col 3 -->
+        <footer>
+            <p>
+                &copy; reza
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: [c1] 100px [c2] auto [c3] auto [c4] 100px [c5];
+        grid-template-rows: [r1] 64px [r2] auto [r3] auto [r4] 128px [r5];
+    }
+
+    header,
+    footer {
+        background-color: indigo;
+        border: solid 1px;
+    }
+
+    nav,
+    main {
+        background-color: plum;
+        border: solid 1px purple;
+    }
+
+    header {
+        grid-column-start: c1;
+        grid-column-end: c5;
+        grid-row-start: r1;
+        grid-row-end: r2;
+    }
+
+    nav {
+        margin: 10px 5px 10px 0;
+        grid-column-start: c1;
+        grid-column-end: c2;
+        grid-row-start: r2;
+        grid-row-end: r3;
+    }
+
+    main {
+        padding: 6px;
+        margin: 10px 0 10px 0;
+        grid-column-start: c2;
+        grid-column-end: c5;
+        grid-row-start: r2;
+        grid-row-end: r3;
+    }
+
+    footer {
+        grid-column-start: c1;
+        grid-column-end: c5;
+        grid-row-start: r4;
+        grid-row-end: r5;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <header></header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis autem rem voluptate temporibus magnam
+                    alias cum adipisci natus ullam quibusdam excepturi minus sapiente, perspiciatis at sequi, sunt dicta
+                    quas minima.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat soluta illo repellendus expedita?
+                    Doloribus perferendis sit non labore molestias? Consectetur nemo expedita quis. Harum numquam
+                    incidunt earum amet natus illo ut. Reprehenderit suscipit, necessitatibus esse quod sed ea, ullam
+                    nulla, voluptatibus ut voluptatem minus laborum culpa harum nobis vero alias hic eos eum sapiente
+                    quasi similique. Veritatis non, fuga recusandae, repellendus deserunt inventore omnis aspernatur
+                    modi accusantium asperiores alias. Ea consectetur officiis sequi aliquam ipsam tenetur sit
+                    quibusdam? Cupiditate dolor eius deserunt omnis ipsum quae a laborum! Eaque quisquam enim placeat
+                    iure qui, optio, maxime, necessitatibus modi perspiciatis labore amet?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium ut optio vel quam. Perspiciatis
+                    nulla earum animi. Sit ipsam dolorem in dolore expedita nobis labore consequatur fugiat! Totam, modi
+                    excepturi.
+                </p>
+            </article>
+        </main>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+</head>
+
+<style>
+    .container {
+        display: grid;
+        grid-template-rows: repeat(2);
+        grid-template-columns: auto auto;
+        grid-template-areas:
+            "header header"
+            "content content"
+        ;
+    }
+
+    .container header {
+        grid-area: header;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container main {
+        grid-area: content;
+        display: grid;
+        place-items: center;
+    }
+
+    .container main p {
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>title</h1>
+            <h1>nav</h1>
+        </header>
+
+        <main>
+            <h1>Muhammad Dwi Reza</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos provident illo at non accusamus?
+                Iusto voluptatem vitae possimus, nostrum cumque quidem asperiores consequatur similique natus, molestiae
+                ducimus sint distinctio numquam!</p>
+        </main>
+    </div>
+
+</body>
+
+</html>

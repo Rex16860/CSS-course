@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-template-columns: 256px auto 128px;
+        grid-template-rows: 64px auto 128px;
+        grid-template-areas:
+            "header header header"
+            "nav main main"
+            "footer footer footer"
+        ;
+        gap: 12px;
+    }
+
+    header,
+    footer {
+        background-color: #121212;
+    }
+
+    main {
+        background-color: grey;
+        color: #fff;
+        padding: 12px;
+    }
+
+    header {
+        display: grid;
+        grid-area: header;
+        color: #fff;
+        place-items: center;
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        display: grid;
+        grid-area: footer;
+        color: #fff;
+        place-items: center;
+    }
+
+    nav .menu h4 {
+        background-color: rgb(61, 61, 61);
+        padding: 4px 8px;
+        text-align: center;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 1s ease;
+        color: white;
+    }
+
+    nav .menu h4:hover {
+        transition: .3s ease;
+        color: dodgerblue;
+    }
+
+    nav .menu .menulist {
+        position: relative;
+        display: none;
+    }
+
+    nav .menu .menulist a {
+        display: block;
+        background-color: #121212;
+        padding: 4px 8px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    nav .menu .menulist a:hover {
+        background-color: dodgerblue;
+        letter-spacing: 0.1rem;
+    }
+
+    .mbar-hover:hover .menubar {
+        background-color: darkgrey;
+        padding: 12px;
+    }
+
+    .menu:hover .menulist {
+        display: block;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <header class="header h-flex">
+            <h1>Welcome to My Website</h1>
+        </header>
+        <nav class="nav">
+            <div class="mbar-hover">
+                <div class="menubar">
+                    <div class="menu">
+                        <h4>Menu</h4>
+                        <div class="menulist">
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Articles</a>
+                            <a href="">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <article>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, aperiam. Hic, nobis animi eius
+                    deleniti, incidunt fuga temporibus placeat vel enim at ipsam ipsa cum magni illum. Sed, voluptas
+                    nobis!
+                </p>
+            </article>
+            <article>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, aperiam. Hic, nobis animi eius
+                    deleniti, incidunt fuga temporibus placeat vel enim at ipsam ipsa cum magni illum. Sed, voluptas
+                    nobis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est tempora odit illo numquam unde
+                    perspiciatis, officia dignissimos nisi placeat? Voluptatem numquam voluptas maiores similique
+                    dolores necessitatibus ipsum sequi minima aperiam voluptatibus, natus officiis deleniti, odio dolore
+                    suscipit sapiente nobis harum quo iste odit? Doloremque dolorum dolor, numquam molestias, quos
+                    minima laboriosam culpa voluptatibus, voluptate eveniet dolorem consequuntur aut. Reprehenderit
+                    exercitationem porro sequi illum ex suscipit, explicabo pariatur at optio atque quae temporibus.
+                    Dignissimos temporibus natus vero facilis blanditiis vitae qui debitis voluptas ullam possimus iste
+                    mollitia quam delectus, beatae alias illo eveniet enim impedit perspiciatis minus laboriosam porro.
+                    Voluptatem, voluptatibus.
+                </p>
+            </article>
+        </main>
+        <footer class="footer">
+            &copy; Dwi Reza
+        </footer>
+    </div>
+
+</body>
+
+</html>y

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 150px auto 64px;
+            grid-template-rows: 75px auto 100px;
+            grid-template-areas:
+                "header header header"
+                "nav main main"
+                "footer footer footer";
+        }
+
+        .header {
+            background-color: plum;
+            border: solid 1px purple;
+            grid-area: header;
+        }
+
+        .nav {
+            background-color: plum;
+            border: solid 1px purple;
+            margin: 10px 10px 10px 0;
+            grid-area: nav;
+        }
+
+        .main {
+            background-color: plum;
+            border: solid 1px purple;
+            margin: 10px 0 10px;
+            grid-area: main;
+        }
+
+        .footer {
+            background-color: plum;
+            border: solid 1px purple;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to My Website</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="">ctn</a></li>
+                <li><a href="">ctn</a></li>
+                <li><a href="">ctn</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius consequatur consequuntur, dolor
+                libero laborum asperiores natus dolores vitae nisi unde mollitia a at. Numquam dicta praesentium
+                possimus ipsum rerum.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt eius consequatur consequuntur, dolor
+                libero laborum asperiores natus dolores vitae nisi unde mollitia a at. Numquam dicta praesentium
+                possimus ipsum rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa excepturi
+                blanditiis placeat modi eaque assumenda enim nihil nemo sint voluptas sit maxime facilis debitis, labore
+                corporis cumque doloremque porro impedit sed cupiditate velit dolore itaque! At, natus repellendus
+                cumque, tempora adipisci vero molestias soluta placeat exercitationem tempore pariatur, eum fuga.
+                Necessitatibus quisquam, hic fugiat perspiciatis ipsum fugit alias, qui sit eum quam esse recusandae
+                reiciendis, maiores rerum nihil harum non nesciunt ad incidunt? Nostrum quis, pariatur velit culpa nulla
+                esse facere laboriosam voluptas? Veniam nostrum vitae voluptatum ea. Repellendus in, distinctio incidunt
+                asperiores aliquid itaque veritatis quasi laudantium temporibus dicta!
+            </p>
+        </main>
+        <footer class="footer">
+            <p>
+                Develope with Will Power by Dwi Reza
+            </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
